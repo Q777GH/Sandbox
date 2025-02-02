@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+	font-family: Consolas, monospace;
+}
+canvas {
+    border: 1px solid white;
+}
+
+#materialBoard {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    user-select: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	font-family: Consolas, monospace;
+}
+
+/* Style for Material Buttons */
+.material-btn {
+    width: 80px;
+    height: 50px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-size: 14px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    user-select: none;
+    text-align: center;
+    transition: transform 0.1s ease, border 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+	font-family: Consolas, monospace;
+}
+
+/* Show Shortcut Key on Button */
+.material-btn::after {
+    content: attr(data-key);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    opacity: 0.7;
+	font-family: Consolas, monospace;
+}
+
+/* Hover and Active Effects */
+.material-btn:hover {
+    transform: scale(1.1);
+}
+
+.material-btn:active {
+    transform: scale(0.9);
+}
+
+/* Highlight Selected Material */
+.material-btn.selected {
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+    transform: scale(1.1);
+}
+
+
+
+
+#currentSelection {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+

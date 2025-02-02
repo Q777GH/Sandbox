@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Sandbox Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Material Selection UI -->
+    <div id="materialBoard">
+    <button class="material-btn" data-type="1" data-key="1" style="background-color: #FFD700;">Sand</button>
+    <button class="material-btn" data-type="2" data-key="2" style="background-color: #0066FF;">Water</button>
+    <button class="material-btn" data-type="3" data-key="3" style="background-color: #FF4500;">Fire</button>
+    <button class="material-btn" data-type="4" data-key="4" style="background-color: #8B4513;">Wood</button>
+    <button class="material-btn" data-type="5" data-key="5" style="background-color: #4B3621;">Oil</button>
+    <button class="material-btn" data-type="6" data-key="6" style="background-color: #FF3300;">Lava</button>
+    <button class="material-btn" data-type="7" data-key="7" style="background-color: #808080;">Stone</button>
+    <button class="material-btn" data-type="0" data-key="0" style="background-color: #333;">🧽 Erase</button>
+</div>
+
+
+
+
+    <script src="scripts/engine/particleSystem.js"></script>
+</body>
+</html>
